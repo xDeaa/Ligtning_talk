@@ -1,0 +1,58 @@
+import { Head } from 'mdx-deck'
+import { Image } from 'mdx-deck'
+import { Appear } from 'mdx-deck'
+
+export { default as theme } from './theme'
+
+<Head>
+  <title>PrototypePollution</title>
+</Head>
+
+# Prototype Pollution
+
+---
+
+## What is Prototype Pollution ?
+
+---
+
+Prototype pollution is a term that was coined many years ago in the JavaScript community
+to designate libraries that added extension methods to the prototype of base objects like "Object", "String" or "Function".
+
+---
+
+## Objects in JavaScript
+
+---
+
+<Image src='./images/ex1.png' size='20em'/>
+
+---
+
+## Merge operation
+
+var a = {"a": 1, "b":2};
+
+var b = {"c": 3, "d":4};
+
+var c = merge(a,b);
+
+---
+
+<Image src='./images/ex2.png' size='20em'/>
+---
+
+#### Some library who have Prototype Pollution attacks
+
+<ul>
+    <li>loadash</li>
+    <li>hoek</li>
+    <li>merge</li>
+</ul>
+
+
+
+---
+## More details
+https://www.youtube.com/watch?v=LUsiFV3dsK8
+https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf
